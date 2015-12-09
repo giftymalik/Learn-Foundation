@@ -1,0 +1,53 @@
+body {
+    background: #F4F4F4;
+}
+
+.header {
+    border-bottom: 3px #ccc solid;
+}
+
+#logo {
+    width: 50%;
+}
+
+.social {
+    float: right;
+    padding-top: 25px;
+}
+
+.social img {
+    width: 40px;
+    float: left;
+}
+
+.showcase {
+    color: #FFF;
+    padding: 40px 0;
+    height: 400px;
+    margin-bottom: 20px;
+    background: #F4F4F4 url('../img/showcase.svg') no-repeat top center;
+    border-bottom: 3px #ccc solid;
+}
+
+.showcase h1 {
+    font-size: 50px;
+}
+
+.showcase p {
+    font-size: 22px;
+    width: 90%;
+}
+
+.boxes i {
+    font-size: 50px;
+    margin: auto;
+    display: block;
+}
+
+footer {
+    background: #333;
+    color: #FFF;
+    text-align: center;
+    height: 80px;
+    padding-top: 30px;
+}
