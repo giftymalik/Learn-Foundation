@@ -7,6 +7,7 @@
     <title>Photography | Gallery</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="plugins/lightbox/css/lightbox.css" />
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a class="active" href="gallery.html">View Image Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a data-toggle="contactUsModal">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -27,16 +28,16 @@
 
     <div class="row">
         <div class="small-12 medium-4 columns">
-            <a href="img/city1.jpg"><img src="img/city1.jpg" alt="City 1" class="thumbnail"></a>
-            <a href="img/city2.jpg"><img src="img/city4.jpg" alt="City 2" class="thumbnail"></a>
+            <a href="img/city1.jpg" data-lightbox="gallery"><img src="img/city1.jpg" alt="City 1" class="thumbnail" /></a>
+            <a href="img/city2.jpg" data-lightbox="gallery"><img src="img/city4.jpg" alt="City 2" class="thumbnail" /></a>
         </div>
         <div class="small-12 medium-4 columns">
-            <a href="img/city4.jpg"><img src="img/city2.jpg" alt="City 4" class="thumbnail"></a>
-            <a href="img/city5.jpg"><img src="img/city5.jpg" alt="City 5" class="thumbnail"></a>
+            <a href="img/city4.jpg" data-lightbox="gallery"><img src="img/city2.jpg" alt="City 4" class="thumbnail" /></a>
+            <a href="img/city5.jpg" data-lightbox="gallery"><img src="img/city5.jpg" alt="City 5" class="thumbnail" /></a>
         </div>
         <div class="small-12 medium-4 columns">
-            <a href="img/city4.jpg"><img src="img/city3.jpg" alt="City 4" class="thumbnail"></a>
-            <a href="img/city6.jpg"><img src="img/city6.jpg" alt="City 6" class="thumbnail"></a>
+            <a href="img/city4.jpg" data-lightbox="gallery"><img src="img/city3.jpg" alt="City 4" class="thumbnail" /></a>
+            <a href="img/city6.jpg" data-lightbox="gallery"><img src="img/city6.jpg" alt="City 6" class="thumbnail" /></a>
         </div>
     </div>
 
@@ -44,9 +45,39 @@
         <p>Sumit Malik Photography &copy; 2016</p>
     </footer>
 
+    <!-- CONTACT MODAL CODE -->
+    <div class="reveal" id="contactUsModal" data-reveal>
+        <h2 id="modalTitle">Contact Me</h2>
+        <p class="lead">Please use this form for all inquiries</p>
+        <form>
+            <div class="row">
+                <label>Name
+                <input type="text" placeholder="Enter Name" />
+                </label>
+            </div>
+            <div class="row">
+                <label>Email
+                <input type="text" placeholder="Enter Email" />
+                </label>
+            </div>
+            <div class="row">
+                <label>Message
+                <textarea placeholder="Enter Email"></textarea>
+                </label>
+            </div>
+            <div class="row">
+                <input type="submit" class="button" value="Send">
+            </div>
+        </form>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="plugins/lightbox/js/lightbox.js"></script>
     <script src="js/app.js"></script>
     <script>
     $(document).foundation();

@@ -19,7 +19,7 @@
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="gallery.html">View Image Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a data-toggle="contactUsModal">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -58,6 +58,35 @@
     <footer>
         <p>Sumit Malik Photography &copy; 2016</p>
     </footer>
+
+    <!-- CONTACT MODAL CODE -->
+    <div class="reveal" id="contactUsModal" data-reveal>
+        <h2 id="modalTitle">Contact Me</h2>
+        <p class="lead">Please use this form for all inquiries</p>
+        <form>
+            <div class="row">
+                <label>Name
+                <input type="text" placeholder="Enter Name" />
+                </label>
+            </div>
+            <div class="row">
+                <label>Email
+                <input type="text" placeholder="Enter Email" />
+                </label>
+            </div>
+            <div class="row">
+                <label>Message
+                <textarea placeholder="Enter Email"></textarea>
+                </label>
+            </div>
+            <div class="row">
+                <input type="submit" class="button" value="Send">
+            </div>
+        </form>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
