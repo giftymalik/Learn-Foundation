@@ -51,3 +51,23 @@ footer {
     height: 80px;
     padding-top: 30px;
 }
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.side-menu h4 {
+    background: #42A5DB;
+    color: #FFF;
+    padding: 8px;
+}
+
+.accordion-title:hover, .accordion-title:focus {
+    background: #333;
+    color: #FFF;
+}
+
+.accordion-title {
+    background: #42A5DB;
+    color: #FFF;
+}
